@@ -1,6 +1,6 @@
-import { Button, Progress } from "@nextui-org/react";
 import SkillsBar from "@/components/AboutMe/SkillsBar";
 import CvEntry from "@/components/AboutMe/CvEntry";
+import SolidButton from "@/components/Button/SolidButton";
 
 export default function AboutMe() {
     return (
@@ -37,13 +37,7 @@ export default function AboutMe() {
                         </p>
 
                         <p className="pb-5">
-                            <Button
-                                size="lg"
-                                radius="none"
-                                className="bg-black uppercase text-white"
-                            >
-                                Download my CV
-                            </Button>
+                            <SolidButton title="Download my CV" />
                         </p>
                     </div>
 
