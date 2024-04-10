@@ -39,6 +39,16 @@
     background-size:
         400px 3px /* Top line */,
         800px 3px /* Middle line */,
-        400px 3px /* Bottom line */;
+        400px 3px; /* Bottom line */
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 640px) {
+    .hr {
+        width: 200px;
+        background-size:
+            200px 3px /* Top line */,
+            400px 3px /* Middle line */,
+            200px 3px; /* Bottom line */
+    }
 }
