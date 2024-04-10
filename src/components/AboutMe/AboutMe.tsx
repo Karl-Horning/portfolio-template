@@ -93,6 +93,7 @@ export default function AboutMe() {
                             title="Graphic Design"
                             location="NY University"
                             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis suscipit sapiente expedita similique, impedit quod, dolorum, dolor iusto incidunt iste nisi quia. Quis eaque a voluptate dicta sit dignissimos?"
+                            bottomBorder={false}
                         />
                     </div>
 
@@ -123,6 +124,7 @@ export default function AboutMe() {
                             title="Senior Design"
                             location="Enter AD"
                             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis suscipit sapiente expedita similique, impedit quod, dolorum, dolor iusto incidunt iste nisi quia. Quis eaque a voluptate dicta sit dignissimos?"
+                            bottomBorder={false}
                         />
                     </div>
                 </div>

@@ -4,6 +4,7 @@ interface CvEntryProps {
     title: string;
     location: string;
     description: string;
+    bottomBorder?: boolean;
 }
 
 export default function CvEntry({
@@ -12,9 +13,13 @@ export default function CvEntry({
     title,
     location,
     description,
+    bottomBorder = true,
 }: CvEntryProps) {
     return (
-        <div className="mb-5 gap-4 border-b-2 border-solid border-black pb-5 md:grid md:grid-cols-2">
+        // <div className="mb-5 gap-4 border-b-2 border-solid border-black pb-5 md:grid md:grid-cols-2">
+        <div
+            className={`mb-5 gap-4 ${bottomBorder ? "border-b-2 border-solid border-black" : ""}  pb-5 md:grid md:grid-cols-2`}
+        >
             <div>
                 <p className="text-sm">
                     {yearFrom}-{yearTo}
