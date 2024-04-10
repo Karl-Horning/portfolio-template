@@ -16,22 +16,21 @@ export default function CvEntry({
     bottomBorder = true,
 }: CvEntryProps) {
     return (
-        // <div className="mb-5 gap-4 border-b-2 border-solid border-black pb-5 md:grid md:grid-cols-2">
         <div
-            className={`mb-5 gap-4 ${bottomBorder ? "border-b-2 border-solid border-black" : ""}  pb-5 md:grid md:grid-cols-2`}
+            className={`mb-5 gap-4 ${bottomBorder ? "border-b-2 border-solid border-black" : ""}  pb-5 md:grid md:grid-cols-3`}
         >
-            <div>
+            <div className="col-span-1">
                 <p className="text-sm">
                     {yearFrom}-{yearTo}
                 </p>
             </div>
-            <div>
+            <div className="col-span-2">
                 <h4 className="text-xl font-bold uppercase">{title}</h4>
             </div>
-            <div>
+            <div className="col-span-1">
                 <p className="font-bold uppercase">{location}</p>
             </div>
-            <div>
+            <div className="col-span-2">
                 <p>{description}</p>
             </div>
         </div>
