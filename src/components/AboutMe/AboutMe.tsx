@@ -2,6 +2,10 @@ import SkillsBar from "@/components/AboutMe/SkillsBar";
 import CvEntry from "@/components/AboutMe/CvEntry";
 import SolidButton from "@/components/Button/SolidButton";
 
+/**
+ * Component representing the About Me section.
+ * @returns {JSX.Element} JSX representing the About Me section.
+ */
 export default function AboutMe() {
     return (
         <section id="about" className="my-10 bg-slate-100 p-10">
