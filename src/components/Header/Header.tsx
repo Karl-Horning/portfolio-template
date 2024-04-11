@@ -34,7 +34,7 @@ export default function Header({ title, whiteHeader = false }: HeaderProps) {
     };
 
     return (
-        <div className="my-20">
+        <div className="mb-20">
             {/* Render the title with dynamic class name */}
             <h2 className={getTitleClassName()}>{title}</h2>
             {/* Render the horizontal line with dynamic class name */}
