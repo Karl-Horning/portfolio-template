@@ -1,30 +1,19 @@
 /**
  * Props for the CvEntry component.
+ * @typedef {Object} CvEntryProps
+ * @property {number} yearFrom - Start year of the entry.
+ * @property {number} yearTo - End year of the entry.
+ * @property {string} title - Title of the entry.
+ * @property {string} location - Location of the entry.
+ * @property {string} description - Description of the entry.
+ * @property {boolean} bottomBorder - Whether to display a bottom border or not (default is true).
  */
 interface CvEntryProps {
-    /**
-     * Start year of the entry.
-     */
     yearFrom: number;
-    /**
-     * End year of the entry.
-     */
     yearTo: number;
-    /**
-     * Title of the entry.
-     */
     title: string;
-    /**
-     * Location of the entry.
-     */
     location: string;
-    /**
-     * Description of the entry.
-     */
     description: string;
-    /**
-     * Whether to display a bottom border or not (default is true).
-     */
     bottomBorder?: boolean;
 }
 
