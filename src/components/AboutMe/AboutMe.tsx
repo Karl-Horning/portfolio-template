@@ -1,6 +1,7 @@
 import SkillsBar from "@/components/AboutMe/SkillsBar";
 import CvEntry from "@/components/AboutMe/CvEntry";
 import SolidButton from "@/components/Button/SolidButton";
+import Header from "@/components/Header/Header";
 
 /**
  * Component representing the About Me section.
@@ -11,11 +12,7 @@ export default function AboutMe() {
         <section id="about" className="my-10 bg-slate-100 p-10">
             <div className="container mx-auto">
                 <div className="my-20">
-                    <h2 className="text-center text-4xl font-bold uppercase">
-                        About Me
-                    </h2>
-
-                    <hr className="hr" />
+                    <Header title="About Me" />
                 </div>
 
                 <div className="gap-4 md:grid md:grid-cols-2">
