@@ -24,7 +24,7 @@ export default function StatSection({
     description,
 }: StatSectionProps) {
     return (
-        <div className=" text-center font-bold uppercase">
+        <div className=" text-center font-bold uppercase mb-10">
             <h3 className="flex items-center justify-center pb-2 text-3xl">
                 <span className="mr-2">{icon}</span>
                 {number}

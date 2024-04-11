@@ -41,7 +41,7 @@ export default function Stats() {
             <div id="skills-container" className="container mx-auto">
                 <Header title="Useful Stats" whiteHeader={true} />
 
-                <div className="grid grid-cols-4 gap-4">
+                <div className="md:grid md:grid-cols-4 md:gap-4">
                     {/* Map over statsData to render each StatSection */}
                     {statsData.map((stat, index) => (
                         <StatSection
