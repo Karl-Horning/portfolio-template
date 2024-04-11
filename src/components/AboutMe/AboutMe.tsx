@@ -10,11 +10,9 @@ import Experience from "@/components/AboutMe/Experience";
  */
 export default function AboutMe() {
     return (
-        <section id="about" className="my-10 bg-slate-100 p-10">
+        <section id="about" className="bg-slate-100 px-10 py-20">
             <div className="container mx-auto">
-                <div className="my-20">
-                    <Header title="About Me" />
-                </div>
+                <Header title="About Me" />
 
                 <div className="gap-4 md:grid md:grid-cols-2">
                     <WhoAmI />
