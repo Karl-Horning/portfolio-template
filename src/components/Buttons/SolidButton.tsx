@@ -21,7 +21,8 @@ export default function SolidButton({ title }: SolidButtonProps) {
         <Button
             size="lg"
             radius="none"
-            className="bg-black uppercase text-white"
+            variant="bordered"
+            className="border-black bg-black uppercase text-white"
         >
             {title}
         </Button>

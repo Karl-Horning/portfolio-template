@@ -1,6 +1,6 @@
 import SkillsBar from "@/components/AboutMe/SkillsBar";
 import CvEntry from "@/components/AboutMe/CvEntry";
-import SolidButton from "@/components/Button/SolidButton";
+import { SolidButton } from "@/components/Buttons";
 import Header from "@/components/Header/Header";
 
 /**
