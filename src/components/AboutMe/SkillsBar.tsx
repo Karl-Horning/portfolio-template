@@ -9,7 +9,7 @@ export default function SkillsBar({ label, value }: SkillsBarProps) {
     return (
         <Progress
             className="pb-5 uppercase"
-            classNames={{ indicator: "bg-black" }}
+            classNames={{ indicator: "bg-gradient-to-r from-black to-black" }}
             color="default"
             label={label}
             radius="none"
