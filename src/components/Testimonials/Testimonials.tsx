@@ -2,9 +2,9 @@ import Header from "@/components/Header/Header";
 
 export default function Testimonials() {
     return (
-        <section id="testimonials" className="container mx-auto my-10">
-            <div className="my-20">
-                <Header title="Why My Clients Say" />
+        <section id="testimonials" className="bg-black px-10 py-20 text-white">
+            <div className="container mx-auto">
+                <Header title="Why My Clients Say" whiteHeader={true} />
 
                 <div
                     id="testimonials-container"
