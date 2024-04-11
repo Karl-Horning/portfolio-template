@@ -4,47 +4,30 @@
     margin: 20px auto;
     width: 400px;
 
-    background-image:
-        /* Top line */
-        linear-gradient(
-            to right,
-            transparent 0%,
-            transparent 33%,
-            black 33%,
-            black 50%,
-            black 66%,
-            transparent 66%,
-            transparent 100%
-        ),
-        /* Middle line */ linear-gradient(to right, black 50%, transparent 50%),
-        /* Bottom line */
-            linear-gradient(
-                to right,
-                transparent 0%,
-                transparent 33%,
-                black 33%,
-                black 50%,
-                black 66%,
-                transparent 66%,
-                transparent 100%
-            );
-    background-position:
-        top left /* Top line */,
-        center left /* Middle line */,
-        bottom left /* Bottom line */;
-    background-size:
-        400px 3px /* Top line */,
-        800px 3px /* Middle line */,
-        400px 3px; /* Bottom line */
+    background-position: top left, center left, bottom left;
+    background-size: 400px 3px, 800px 3px, 400px 3px;
     background-repeat: no-repeat;
+}
+
+.hr-line {
+    /* Common gradient definition */
+    background-image:
+        linear-gradient(to right, transparent 0%, transparent 33%, var(--line-color) 33%, var(--line-color) 50%, var(--line-color) 66%, transparent 66%, transparent 100%),
+        linear-gradient(to right, var(--line-color) 50%, transparent 50%),
+        linear-gradient(to right, transparent 0%, transparent 33%, var(--line-color) 33%, var(--line-color) 50%, var(--line-color) 66%, transparent 66%, transparent 100%);
+}
+
+.hr-black {
+    --line-color: black;
+}
+
+.hr-white {
+    --line-color: white;
 }
 
 @media screen and (max-width: 640px) {
     .hr {
         width: 200px;
-        background-size:
-            200px 3px /* Top line */,
-            400px 3px /* Middle line */,
-            200px 3px; /* Bottom line */
+        background-size: 200px 3px, 400px 3px, 200px 3px;
     }
 }
