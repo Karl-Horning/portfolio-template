@@ -17,13 +17,13 @@ export default function Skills() {
     const skillsData = [
         {
             icon: <FaComputer />,
-            title: "Web Design &amp; UI",
+            title: "Web Design & UI",
             description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam pariatur nam exercitationem, soluta qui cupiditate expedita, corrupti suscipit cumque, dolorum distinctio illo quod reiciendis sit eius atque omnis enim eligendi.",
         },
         {
             icon: <LuFrame />,
-            title: "User Flow &amp; Wireframes",
+            title: "User Flow & Wireframes",
             description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam pariatur nam exercitationem, soluta qui cupiditate expedita, corrupti suscipit cumque, dolorum distinctio illo quod reiciendis sit eius atque omnis enim eligendi.",
         },
