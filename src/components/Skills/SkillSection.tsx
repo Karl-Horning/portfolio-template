@@ -22,7 +22,7 @@ export default function SkillSection({
     icon,
     title,
     description,
-}: SkillSectionProps) {
+}: Readonly<SkillSectionProps>) {
     return (
         <div className="grid grid-cols-6 gap-4 p-4">
             <div className="col-span-1 flex justify-center text-4xl">
