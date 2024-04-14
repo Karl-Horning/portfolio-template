@@ -5,6 +5,13 @@ import SkillsBar from "@/components/AboutMe/SkillsBar";
  * @returns {JSX.Element} JSX representing the ExpertIn section.
  */
 export default function ExpertIn() {
+    const skills = [
+        { label: "Graphic Design", value: 60 },
+        { label: "CSS", value: 90 },
+        { label: "JavaScript", value: 70 },
+        { label: "Wordpress", value: 50 },
+    ];
+
     return (
         <div className="pb-5">
             <h3 className="pb-5 text-2xl font-bold uppercase">Expert In</h3>
@@ -16,10 +23,13 @@ export default function ExpertIn() {
                 totam ea maiores a. Saepe?
             </p>
 
-            <SkillsBar label="Graphic Design" value={60} />
-            <SkillsBar label="CSS" value={90} />
-            <SkillsBar label="JavaScript" value={70} />
-            <SkillsBar label="Wordpress" value={50} />
+            {skills.map((skill) => (
+                <SkillsBar
+                    key={skill.label}
+                    label={skill.label}
+                    value={skill.value}
+                />
+            ))}
         </div>
     );
 }
