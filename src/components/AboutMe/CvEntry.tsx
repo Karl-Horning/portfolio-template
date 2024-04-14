@@ -35,7 +35,7 @@ export default function CvEntry({
     location,
     description,
     bottomBorder = true,
-}: CvEntryProps) {
+}: Readonly<CvEntryProps>) {
     return (
         <div
             className={`mb-5 gap-4 ${bottomBorder ? "border-b-2 border-solid border-black" : ""}  pb-5 md:grid md:grid-cols-3`}

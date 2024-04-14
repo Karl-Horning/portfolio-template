@@ -16,7 +16,7 @@ interface SkillsBarProps {
  * @param {SkillsBarProps} props - Props for the SkillsBar component.
  * @returns {JSX.Element} JSX representing the SkillsBar component.
  */
-export default function SkillsBar({ label, value }: SkillsBarProps) {
+export default function SkillsBar({ label, value }: Readonly<SkillsBarProps>) {
     return (
         // Progress component to display the skill level
         <Progress

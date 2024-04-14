@@ -16,7 +16,7 @@ interface HeaderProps {
  * @param {HeaderProps} props - Props for the Header component
  * @returns {JSX.Element} Header component JSX
  */
-export default function Header({ title, whiteHeader = false }: HeaderProps) {
+export default function Header({ title, whiteHeader = false }: Readonly<HeaderProps>) {
     /**
      * Get the class name for the title element
      * @returns {string} The class name for the title element

@@ -13,7 +13,7 @@ interface OutlineButtonProps {
  * @param {OutlineButtonProps} props - Props for the OutlineButton component.
  * @returns {JSX.Element} JSX representing the OutlineButton component.
  */
-export default function OutlineButton({ title }: OutlineButtonProps) {
+export default function OutlineButton({ title }: Readonly<OutlineButtonProps>) {
     return (
         <Button
             size="lg"

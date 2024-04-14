@@ -16,7 +16,7 @@ interface SolidButtonProps {
  * @param {SolidButtonProps.title} string - The title to display on the button.
  * @returns {JSX.Element} JSX representing the SolidButton component.
  */
-export default function SolidButton({ title }: SolidButtonProps) {
+export default function SolidButton({ title }: Readonly<SolidButtonProps>) {
     return (
         <Button
             size="lg"
