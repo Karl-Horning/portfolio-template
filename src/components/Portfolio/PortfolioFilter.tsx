@@ -11,11 +11,9 @@ export default function PortfolioFilter() {
     ];
 
     return (
-        <div className="text-center">
+        <div className="mb-5 text-center grid md:grid-cols-6 md:gap-2">
             {filters.map((filter) => (
-                <span className="px-2" key={filter}>
-                    <OutlineButton key={filter} title={filter} />
-                </span>
+                <OutlineButton key={filter} title={filter} className='mb-2' />
             ))}
         </div>
     );
