@@ -29,7 +29,7 @@ export default function PortfolioCard({
     imageSrc,
     tag,
     title,
-}: PortfolioCardProps) {
+}: Readonly<PortfolioCardProps>) {
     return (
         <Card isFooterBlurred radius="none" className="border-none">
             <Image
