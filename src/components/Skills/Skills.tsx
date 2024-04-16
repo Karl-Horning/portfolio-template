@@ -54,7 +54,13 @@ export default function Skills() {
     ];
 
     return (
-        <section id="skills" className="bg-black px-10 py-40 text-white">
+        <section
+            id="skills"
+            className="bg-black bg-cover bg-center px-10 py-40 text-white"
+            style={{
+                backgroundImage: `url(${"images/backgrounds/pexels-dominika-roseclay-1036808.jpg"})`,
+            }}
+        >
             <div className="container mx-auto">
                 <Header title="What I Do" whiteHeader />
 

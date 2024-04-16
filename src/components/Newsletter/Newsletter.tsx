@@ -8,7 +8,13 @@ import { OutlineButton } from "@/components/Buttons";
  */
 export default function Newsletter() {
     return (
-        <section id="newsletter" className="bg-black px-10 py-40 text-white">
+        <section
+            id="newsletter"
+            className="bg-black bg-cover bg-center px-10 py-40 text-white"
+            style={{
+                backgroundImage: `url(${"images/backgrounds/pexels-photo-255377.jpeg"})`,
+            }}
+        >
             <div className="container mx-auto">
                 <Header title="Newsletter" whiteHeader />
 

@@ -37,7 +37,13 @@ export default function Stats() {
     ];
 
     return (
-        <section id="blog" className="bg-black px-10 py-40 text-white">
+        <section
+            id="blog"
+            className="bg-black bg-cover bg-center px-10 py-40 text-white"
+            style={{
+                backgroundImage: `url(${"images/backgrounds/pexels-pixabay-414630.jpg"})`,
+            }}
+        >
             <div id="skills-container" className="container mx-auto">
                 <Header title="Useful Stats" whiteHeader />
 
