@@ -26,15 +26,17 @@ export default function TestimonialsBlockquote({
     position,
     quote,
 }: Readonly<TestimonialsBlockquoteProps>) {
-    <blockquote className="mb-5 text-xl">
-        <p className="mb-10">
-            <QuotationMark />
-            {quote}
-            <QuotationMark closingQuote={true} />
-        </p>
+    return (
+        <blockquote className="mb-5 text-xl">
+            <p className="mb-10">
+                <QuotationMark />
+                {quote}
+                <QuotationMark closingQuote={true} />
+            </p>
 
-        <cite className="font-bold">
-            {name}, {position}
-        </cite>
-    </blockquote>;
+            <cite className="font-bold">
+                {name}, {position}
+            </cite>
+        </blockquote>
+    );
 }
