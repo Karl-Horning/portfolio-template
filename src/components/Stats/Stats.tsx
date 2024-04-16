@@ -39,7 +39,7 @@ export default function Stats() {
     return (
         <section id="blog" className="bg-black px-10 py-40 text-white">
             <div id="skills-container" className="container mx-auto">
-                <Header title="Useful Stats" whiteHeader={true} />
+                <Header title="Useful Stats" whiteHeader />
 
                 <div className="md:grid md:grid-cols-4 md:gap-4">
                     {/* Map over statsData to render each StatSection */}

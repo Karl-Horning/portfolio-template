@@ -56,7 +56,7 @@ export default function Skills() {
     return (
         <section id="skills" className="bg-black px-10 py-40 text-white">
             <div className="container mx-auto">
-                <Header title="What I Do" whiteHeader={true} />
+                <Header title="What I Do" whiteHeader />
 
                 <div
                     id="skills-container"
